@@ -18,6 +18,235 @@
         margin: 0;
         font-family: Volkhov, serif;
     }
+    /* ákfgashf */
+    
+    .banner .right {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .right .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .right .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .right .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .right .swiper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mySwiperright {
+        position: relative;
+        border-bottom-left-radius: 25px;
+    }
+    
+    .swiper-pagination-right {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 40px;
+    }
+    
+    .swiper-pagination-right span {
+        height: 12px;
+        width: 12px;
+        background-color: white !important;
+    }
+    
+    .swiper-pagination-right .swiper-pagination-bullet {
+        opacity: 1;
+    }
+    
+    .mySwiperright__item {
+        position: relative;
+        width: 100%;
+        height: 870px;
+    }
+    
+    .mySwiperright__item .slider-num {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: white;
+    }
+    
+    .mySwiperright__item img {}
+    /* HomePageServices */
+    
+    .HomePageServices .container {
+        max-width: 1200px;
+    }
+    
+    .HomePageServices__list {
+        margin-top: 30px;
+    }
+    
+    .HomePageServices__item {
+        padding: 30px 20px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+    }
+    
+    .HomePageServices__item:hover {
+        text-decoration: none;
+        border: 1px solid #eee;
+        transition: .4s ease-in;
+        background: #fff;
+    }
+    
+    .HomePageServices__item:hover h4 {
+        color: #009f4d;
+        transition: .4s ease-in;
+    }
+    
+    .HomePageServices__text {}
+    
+    .HomePageServices__text h4 {
+        font-size: 22px;
+        line-height: 25px;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .HomePageServices__text p {
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 27px;
+        color: #707070;
+    }
+    /* <-- gallery --> */
+    
+    .gallery__item {
+        padding: 0;
+    }
+    
+    .gallery_effect .title {
+        font-size: 22px;
+        line-height: 28px;
+        color: #fb811e;
+    }
+    
+    .gallery_effect .title2 {
+        font-size: 40px;
+        line-height: 50px;
+        color: #060606;
+        font-weight: 600;
+        ;
+    }
+    
+    .gallery_effect p {
+        font-size: 17px;
+        line-height: 27px;
+        color: #707070;
+    }
+    
+    .btn-style {
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        padding: 12px 30px;
+        font-weight: 600;
+        background: #fb811e;
+        border: none;
+        color: #fff;
+        border-radius: 30px;
+        transition: all .25s ease-in-out;
+    }
+    
+    .btn-style:hover {
+        background: #009f4d;
+    }
+    
+    .gallery_effect--children::before {
+        content: "";
+        width: 0%;
+        height: 100%;
+        top: 0;
+        /* left: -150%; */
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+        transform: skewX(160deg);
+        /* transition: all 900ms; */
+        /* animation-fill-mode: forwards; */
+        position: absolute;
+    }
+    
+    @keyframes moveRight {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 120%;
+        }
+    }
+    
+    .gallery_effect--children:hover::before {
+        /* left: 100%; */
+        animation: moveRight 600ms;
+    }
+    
+    .gallery_effect {
+        margin-bottom: 0;
+        position: relative;
+    }
+    
+    .gallery_effect--children {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .gallery_effect h5 {
+        position: absolute;
+        z-index: 2;
+        color: #fff;
+        bottom: 0px;
+        font-weight: bold;
+        background: rgb(255 255 255 / 27%);
+        padding: 6px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 20px;
+    }
+    
+    .gallery_effect img {
+        width: 100%;
+    }
     /* custommer */
     
     .customer {
@@ -257,4 +486,40 @@
         background: rgb(255 201 69 / 19%);
         box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
         transition: all .8s;
+    }
+    
+    .rollToTop {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #009f4d;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        font-size: 12px;
+    }
+    
+    .rollToTop:hover {
+        transition: all .5s;
+        opacity: 0.8;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .cd-top--is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .cd-top--fade-out {
+        opacity: 1;
     }
