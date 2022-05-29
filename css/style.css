@@ -7,7 +7,65 @@
 body {
     font-family: Source Sans Pro, sans-serif;
 }
+.servicesblock h4{
+    color: #fb811e;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.servicesblock h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.servicesblock p{
+    font-size: 17px;
+    line-height: 27px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+.services__bottom i{
+    font-size: 30px;
+    color:#fb811e ;
+}
+.services__bottom h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.services__right{
+    position: relative;
+    margin-left:  auto;
+}
+.services__right img{
+    border-radius: 30px;
+}
+.services__box{
+    position: absolute;
+    background:#fb811e;
+    color: #fff;
+    box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+    min-width: 300px;
+    border-radius: 0 0 100px 0;
+    text-align: center;
+    padding: 40px;
+    left: -85px;
+    bottom: 37px;
+
+}
+.services__box h5{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 80px;
+}
+.services__box p{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .2px;
+}
 h1,
 h2,
 h3,
