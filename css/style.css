@@ -414,6 +414,11 @@ h6 {
     background-color: rgb(224, 222, 222) !important;
 }
 
+.swiper-pagination span:hover {
+    background-color: #fb811e !important;
+    opacity: 1;
+}
+
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
     background-color: #fb811e !important;
 }
