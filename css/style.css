@@ -52,10 +52,16 @@ header.header-fixed {
     height: 70px;
     background-color: #222222;
     background-color: white;
+    transition: all 0.8s;
 }
 
 header.header-fixed .dropdown i {
     color: black;
+}
+
+header.header-fixed a {
+    color: black;
+    transition: all 0.8s;
 }
 
 .header__left a {
@@ -200,7 +206,7 @@ ul.submenu {
 
 .header__title i {
     position: absolute;
-    top: -10px;
+    top: -4px;
     left: 55px;
     font-size: 20px;
 }
