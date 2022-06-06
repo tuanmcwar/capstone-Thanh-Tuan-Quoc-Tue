@@ -392,6 +392,7 @@ ul.submenu {
 
 .servicesblock .left {
   align-self: center;
+  /* height: 100vh; */
 }
 
 .services__bottom i {
@@ -610,7 +611,7 @@ h6 {
 .mySwiperright__item {
   position: relative;
   width: 100%;
-  height: 870px;
+  height: 100vh;
 }
 
 .mySwiperright__item .slider-num {
@@ -767,6 +768,7 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .gallery_effect h5 {
